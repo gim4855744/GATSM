@@ -10,10 +10,10 @@ from sklearn.model_selection import train_test_split
 import lightning.pytorch as pl
 from lightning.pytorch.callbacks import ModelCheckpoint, EarlyStopping
 
-from gamts.data import get_dataset
-from gamts.preprocessor import Preprocessor
-from gamts.dataloader import get_time_dataloader
-from gamts.models import *
+from gatsm.data import get_dataset
+from gatsm.preprocessor import Preprocessor
+from gatsm.dataloader import get_time_dataloader
+from gatsm.models import *
 
 warnings.filterwarnings('ignore')
 logging.disable(logging.WARNING)
@@ -32,7 +32,7 @@ def main():
     
     pl.seed_everything(args.seed)
 
-    hparams = yaml.load(open(f'hparams/{args.model}.yaml'), yaml.FullLoader)[args.dataset]
+    hparams = yaml.load(open(f'hparams/GATSM.yaml'), yaml.FullLoader)[args.dataset]
     x, y, task = get_dataset(args.dataset, args.datapath)
     
     indices = x.index.unique()
@@ -66,7 +66,7 @@ def main():
     )
 
     ckpt_dir = './checkpoints'
-    ckpt_filename = f'{args.model}-{args.dataset}-{args.seed}'
+    ckpt_filename = f'GATSM-{args.dataset}-{args.seed}'
     ckpt_path = os.path.join(ckpt_dir, f'{ckpt_filename}.ckpt')
 
     if args.mode == 'train':

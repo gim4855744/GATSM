@@ -12,11 +12,11 @@ import lightning.pytorch as pl
 import optuna
 from lightning.pytorch.callbacks import ModelCheckpoint, EarlyStopping
 
-from gamts.data import get_dataset
-from gamts.preprocessor import Preprocessor
-from gamts.dataloader import get_time_dataloader
-from gamts.models import *
-from gamts.utils import save_pickle
+from gatsm.data import get_dataset
+from gatsm.preprocessor import Preprocessor
+from gatsm.dataloader import get_time_dataloader
+from gatsm.models import *
+from gatsm.utils import save_pickle
 
 warnings.filterwarnings('ignore')
 logging.disable(logging.WARNING)
@@ -79,7 +79,7 @@ def objective(trial):
         else:
             n_outputs = y.shape[1]
 
-        model = GAMTS(
+        model = GATSM(
             task,
             n_features,
             n_outputs,
@@ -95,7 +95,7 @@ def objective(trial):
         )
 
         ckpt_dir = './checkpoints/tune'
-        ckpt_filename = f'GAMTS-{args.dataset}'
+        ckpt_filename = f'GATSM-{args.dataset}'
         ckpt_path = os.path.join(ckpt_dir, f'{ckpt_filename}.ckpt')
 
         if os.path.exists(ckpt_path):
@@ -127,7 +127,7 @@ def main():
     study = optuna.create_study(direction='minimize')
     study.optimize(objective, n_trials, show_progress_bar=True)
     print(study.best_params)
-    save_pickle(f'hparams/GAMTS-{args.dataset}.pkl', study.best_params)
+    save_pickle(f'hparams/GATSM-{args.dataset}.pkl', study.best_params)
 
 
 if __name__ == '__main__':

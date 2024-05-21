@@ -10,10 +10,10 @@ from scipy.interpolate import interp1d
 
 import lightning.pytorch as pl
 
-from gamts.data import get_dataset
-from gamts.preprocessor import Preprocessor
-from gamts.dataloader import get_time_dataloader
-from gamts.models import GATSM
+from gatsm.data import get_dataset
+from gatsm.preprocessor import Preprocessor
+from gatsm.dataloader import get_time_dataloader
+from gatsm.models import GATSM
 
 warnings.filterwarnings('ignore')
 logging.disable(logging.WARNING)
@@ -384,7 +384,7 @@ def main():
     test_dataloader = get_time_dataloader(x_test, y_test, task, batch_size=512)
 
     ckpt_dir = './checkpoints'
-    ckpt_filename = f'GAMTS-{args.dataset}-{args.seed}'
+    ckpt_filename = f'GATSM-{args.dataset}-{args.seed}'
     ckpt_path = os.path.join(ckpt_dir, f'{ckpt_filename}.ckpt')
 
     model = GATSM.load_from_checkpoint(ckpt_path)
