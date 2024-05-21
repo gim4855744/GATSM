@@ -1,0 +1,88 @@
+PhysioNet2012:
+  batch_size: 512
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: False
+  nbm_dropout: 0.07150833599382814
+  attn_emb_size: 125
+  attn_n_heads: 8
+  attn_dropout: 0.7324244128604477
+  lr: 0.007303627957406906
+  weight_decay: 0.00021810523025522232
+PhysioNet2019:
+  batch_size: 512
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: True
+  nbm_dropout: 0.06522689621635654
+  attn_emb_size: 90
+  attn_n_heads: 6
+  attn_dropout: 0.8991570241651857
+  lr: 0.004508882953409493
+  weight_decay: 0.02258948673201378
+AppliancesEnergy:
+  batch_size: 32
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: False
+  nbm_dropout: 0.23148071468626916
+  attn_emb_size: 110
+  attn_n_heads: 8
+  attn_dropout: 0.06924052436811544
+  lr: 0.004950314086516403
+  weight_decay: 0.0016794862055699246
+AustraliaRainfall:
+  batch_size: 32768
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: False
+  nbm_dropout: 0.005936066627214423
+  attn_emb_size: 44
+  attn_n_heads: 7
+  attn_dropout: 0.0012145681708307376
+  lr: 0.009225190366257251
+  weight_decay: 2.204358663567663e-06
+BeijingPM10Quality:
+  batch_size: 4096
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: False
+  nbm_dropout: 0.023402568678579674
+  attn_emb_size: 81
+  attn_n_heads: 8
+  attn_dropout: 0.11693113589515663
+  lr: 0.006075642368401013
+  weight_decay: 5.0469077473608845e-06
+Heartbeat:
+  batch_size: 64
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: True
+  nbm_dropout: 0.1749194847202824
+  attn_emb_size: 92
+  attn_n_heads: 2
+  attn_dropout: 0.16533883368594005
+  lr: 0.008060963563556086
+  weight_decay: 4.786910876442769e-06
+LSST:
+  batch_size: 1024
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: False
+  nbm_dropout: 0.02499975278899766
+  attn_emb_size: 59
+  attn_n_heads: 7
+  attn_dropout: 0.20632835984463094
+  lr: 0.005561029472361179
+  weight_decay: 0.00595737262783272
+NATOPS:
+  batch_size: 64
+  nbm_hidden_dims: [256, 256, 128]
+  nbm_n_bases: 100
+  nbm_batchnorm: True
+  nbm_dropout: 0.0048271825520485034
+  attn_emb_size: 49
+  attn_n_heads: 8
+  attn_dropout: 0.7919771932802497
+  lr: 0.008155832956323586
+  weight_decay: 0.027480385465815934
