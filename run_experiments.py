@@ -60,7 +60,6 @@ def main():
     model = GATSM(
         task,
         n_features,
-        n_times,
         n_outputs,
         **hparams
     )
