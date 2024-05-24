@@ -1,5 +1,12 @@
 # Generalized Additive Time Series Model (GATSM)
 
+## Requirements
+- torch == 2.0.1
+- lightning == 2.2.4
+- tsai == 0.3.9
+- scikit-learn == 1.4.2
+- PyYAML == 6.0.1
+
 ## Dataset directory
 
 ### For the PhysioNet datasets
