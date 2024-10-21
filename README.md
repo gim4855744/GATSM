@@ -1,5 +1,7 @@
 # Generalized Additive Time Series Model (GATSM)
 
+A PyTorch implementation for Generalized Additive Time Series Model (GATSM), proposed in the paper "<em>Transparent Networks for Multivariate Time Series<em>".
+
 ## Requirements
 - torch == 2.0.1
 - lightning == 2.2.4
@@ -43,4 +45,17 @@ python run_experiments.py --mode=test --dataset=<dataset name> --seed=<random se
 ## Visualization
 ```bash
 python visualization.py --dataset=<dataset name> --seed=<random seed>
+```
+
+## Citation
+```bibtex
+@misc{kim2024transparent,
+      title={Transparent Networks for Multivariate Time Series}, 
+      author={Minkyu Kim and Suan Lee and Jinho Kim},
+      year={2024},
+      eprint={2410.10535},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.10535}, 
+}
 ```
