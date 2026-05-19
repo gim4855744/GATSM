@@ -3,7 +3,7 @@
 [![AAAI](https://img.shields.io/badge/AAAI-2026-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/41084)
 [![ArXiv](https://img.shields.io/badge/ArXiv-2410.10535-red)](https://arxiv.org/abs/2410.10535)
 
-A PyTorch implementation for Generalized Additive Time Series Model (GATSM), proposed in the paper "<em>Transparent Networks for Multivariate Time Series<em>".
+A PyTorch implementation for Generalized Additive Time Series Model (GATSM), proposed in the paper "*Transparent Networks for Multivariate Time Series*".
 
 ## Requirements
 - torch == 2.0.1
@@ -52,13 +52,10 @@ python visualization.py --dataset=<dataset name> --seed=<random seed>
 
 ## Citation
 ```bibtex
-@misc{kim2024transparent,
-      title={Transparent Networks for Multivariate Time Series}, 
-      author={Minkyu Kim and Suan Lee and Jinho Kim},
-      year={2024},
-      eprint={2410.10535},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2410.10535}, 
+@inproceedings{kim2026transparent,
+    title={Transparent Networks for Multivariate Time Series},
+    author={Minkyu Kim and Suan Lee and Jinho Kim},
+    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+    year={2026},
 }
 ```
