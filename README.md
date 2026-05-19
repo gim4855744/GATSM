@@ -54,7 +54,7 @@ python visualization.py --dataset=<dataset name> --seed=<random seed>
 ```bibtex
 @inproceedings{kim2026transparent,
     title={Transparent Networks for Multivariate Time Series},
-    author={Minkyu Kim and Suan Lee and Jinho Kim},
+    author={Kim, Minkyu and Lee, Suan and Kim, Jinho},
     booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
     year={2026},
 }
