@@ -1,5 +1,8 @@
 # Generalized Additive Time Series Model (GATSM)
 
+[![AAAI](https://img.shields.io/badge/AAAI-2026-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/41084)
+[![ArXiv](https://img.shields.io/badge/ArXiv-2410.10535-red)](https://arxiv.org/abs/2410.10535)
+
 A PyTorch implementation for Generalized Additive Time Series Model (GATSM), proposed in the paper "<em>Transparent Networks for Multivariate Time Series<em>".
 
 ## Requirements
